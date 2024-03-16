@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-image: url('Weather\ App\ Wallpaper.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 3.5em;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid whitesmoke;
+    border-radius: 8px 0 0 8px;
+    font-size: 18px;
+}
+
+button[type="submit"] {
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+.weather-container {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+
+.weather-card {
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+}
+
+.weather-card img {
+    width: 75px;
+    height: 75px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
